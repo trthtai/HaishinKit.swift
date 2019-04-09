@@ -24,6 +24,8 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "10.2"
   s.tvos.source_files = "Platforms/tvOS/*.{h,swift}"
 
+  s.static_framework = true
+
   s.source_files = "Sources/**/*.swift"
   s.dependency 'Logboard', '~> 2.1.0'
   s.dependency 'AudioKit'
